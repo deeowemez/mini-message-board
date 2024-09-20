@@ -5,22 +5,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Page</title>
+    <title>Messageboard 💬</title>
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/header.css">
 </head>
 
 <body>
-    <header>
-        <%- include('header', {title: title}) %>
-    </header>
-    <main>
-        <%- include('about', {message: message}) %>
+    <main> 
+        <%- include ('messages', { message:messages }) %>
     </main>
-    <footer>
-        <%- include('footer') %>
-    </footer>
 </body>
 
 </html>
