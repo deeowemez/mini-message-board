@@ -19,8 +19,13 @@ const getMessages = asyncHandler(async (req, res) => {
     res.render("index", { title: "Messageboard 💬", messages: messages });
 });
 
-const createMessage = asyncHandler(async (req, res) => {
-    res.render("index");
+const createMessageForm = asyncHandler(async (req, res) => {
+    res.render("form");
 });
 
-module.exports = { getMessages, createMessage };
+const createMessage = asyncHandler(async (req, res) => {
+    messages.push({ text: req.body.messageText, user: req.body.messageUser, date: new Date().toLocaleDateString('en-PH'), time: new Date().toLocaleTimeString('en-PH') });
+    res.redirect("/");
+});
+
+module.exports = { getMessages, createMessageForm, createMessage };
