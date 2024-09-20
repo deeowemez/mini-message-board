@@ -1,0 +1,24 @@
+main .message-container{
+    height: auto;
+    width: 250px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.message-container .main-text,
+.message-container, .sub-text{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.message-container .main-text{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.message-container .sub-text{
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 10px;
+}

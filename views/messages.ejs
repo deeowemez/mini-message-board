@@ -1,7 +1,19 @@
-<div>
-    <% for (let i=0; i < message.length; i++) { %>
-        <p>
-            <%= message[i].text %>
-        </p>
-        <% } %>
-</div>
+<% for (let i=0; i < messages.length; i++) { %>
+  <div class="message-container">
+    <p class="main-text">
+      <%= messages[i].text %>
+    </p>
+    <p class="sub-text"> Text </p>
+    <p class="main-text">
+      <%= messages[i].user %>
+    </p>
+    <p class="sub-text"> User </p>
+    <p class="main-text">
+      <%= messages[i].date %>
+    </p>
+    <p class="main-text">
+      <%= messages[i].time %>
+    </p>
+    <p class="sub-text"> Date Added </p>
+  </div>
+  <% } %>

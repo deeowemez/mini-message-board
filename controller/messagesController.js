@@ -4,12 +4,14 @@ const messages = [
     {
         text: "Hi there!",
         user: "Amando",
-        added: new Date()
+        date: new Date().toLocaleDateString('en-PH'),
+        time: new Date().toLocaleTimeString('en-PH')
     },
     {
         text: "Hello World!",
         user: "Charles",
-        added: new Date()
+        date: new Date().toLocaleDateString('en-PH'),
+        time: new Date().toLocaleTimeString('en-PH')
     }
 ];
 
